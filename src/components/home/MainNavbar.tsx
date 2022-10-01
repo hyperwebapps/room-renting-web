@@ -7,7 +7,7 @@ export const MainNavbar: FC = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="transparent" elevation={1}>
+      <AppBar position="static" elevation={1} sx={{ backgroundColor: 'white' }}>
         <Container
           maxWidth="lg"
           sx={{
@@ -16,6 +16,7 @@ export const MainNavbar: FC = () => {
             display: 'flex',
             py: '0.8rem',
             position: 'relative',
+            zIndex: 'tooltip',
           }}>
           <Box component="div" sx={{ flexGrow: 1 }}>
             <img
